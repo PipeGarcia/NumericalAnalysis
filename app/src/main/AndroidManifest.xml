@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pipe.numericalanalisys">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Numerical Solver"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity
+            android:name=".eqsystemsActivity"
+            android:label="@string/title_activity_eqsystems"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".interpolationActivity"
+            android:label="@string/title_activity_interpolation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chooseActivity"
+            android:label="@string/title_activity_choose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".incrementalActivity" />
+        <activity android:name=".Incremental_searches_parameters"></activity>
+    </application>
+
+</manifest>

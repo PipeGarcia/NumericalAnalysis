@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Numerical Analisys</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_eqsystems">eqsystemsActivity</string>
+    <string name="title_activity_interpolation">interpolationActivity</string>
+    <string name="title_activity_choose">chooseActivity</string>
+</resources>
