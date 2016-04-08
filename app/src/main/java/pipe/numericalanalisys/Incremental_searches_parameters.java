@@ -49,13 +49,13 @@ public class Incremental_searches_parameters extends AppCompatActivity {
                 String function = editTextFunction.getText().toString();
                 String xIni = editTextX.getText().toString();
                 String delta = editTextDelta.getText().toString();
-                String iterations = editTextIterations.getText().toString();
+                String xsup = editTextIterations.getText().toString();
 
                 Intent i = new Intent(Incremental_searches_parameters.this, incrementalActivity.class);
                 i.putExtra("vfun", function);
                 i.putExtra("vxini", xIni);
                 i.putExtra("vdelta", delta);
-                i.putExtra("viterations", iterations);
+                i.putExtra("vxsup", xsup);
                 startActivity(i);
                 startActivity(new Intent(Incremental_searches_parameters.this, incrementalActivity.class));
 

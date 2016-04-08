@@ -27,21 +27,20 @@
         android:text="Set the function:"
         android:id="@+id/textView22"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
+        android:layout_marginTop="60dp"
+        android:textIsSelectable="false"
         android:layout_below="@+id/textView21"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="65dp"
-        android:textIsSelectable="false" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_alignBottom="@+id/textView22"
-        android:layout_toRightOf="@+id/textView22"
         android:hint="Ej: cos(x)"
-        android:layout_alignRight="@+id/textView24"
-        android:layout_alignEnd="@+id/textView24" />
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set the number of iterations:"
+        android:text="Set the superior x:"
         android:id="@+id/textView24"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:textIsSelectable="false"

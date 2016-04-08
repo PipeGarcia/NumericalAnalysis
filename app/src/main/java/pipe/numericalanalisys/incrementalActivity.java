@@ -40,12 +40,12 @@ public class incrementalActivity extends AppCompatActivity {
             String cont_fun   = extras.getString("vfun");
             double cont_xini  = Double.parseDouble(extras.getString("vxini"));
             double cont_delta  = Double.parseDouble(extras.getString("vdelta"));
-            double cont_iterations  = Double.parseDouble(extras.getString("viterations"));
+            double cont_xsup  = Double.parseDouble(extras.getString("vxsup"));
             int cont = -1;
 
 
             //while (cont_xinf<=cont_xsup) {
-                for(double i= cont_xini;i<(cont_xini+cont_iterations);i = i + cont_delta) {
+                for(double i= cont_xini;i<=(cont_xsup);i = i + cont_delta) {
                     Expression expr = new ExpressionBuilder(cont_fun)
                             .variables("x", "e", "π")
                             .build()
