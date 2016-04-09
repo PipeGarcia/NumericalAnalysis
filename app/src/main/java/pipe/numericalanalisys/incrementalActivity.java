@@ -17,6 +17,16 @@ import java.util.List;
 
 public class incrementalActivity extends AppCompatActivity {
 
+    private String funcion;
+
+    public String getFuncion() {
+        return funcion;
+    }
+
+    public void setFuncion(String funcion) {
+        this.funcion = funcion;
+    }
+
     private ArrayAdapter<String> adapter;
     private ArrayList<String> arrayList;
     private ArrayList<String> arrayListFuncResult;
@@ -38,7 +48,12 @@ public class incrementalActivity extends AppCompatActivity {
         if(extras != null) {
             int raices = 0;
             String cont_fun   = extras.getString("vfun");
-            double cont_xini  = Double.parseDouble(extras.getString("vxini"));
+            setFuncion(cont_fun);
+
+            TextView tv = (TextView) findViewById(R.id.textView20);
+            tv.setText(String.valueOf(getFuncion()));
+
+            double cont_xini  = Double.parseDouble(extras.getString("vxinf"));
             double cont_delta  = Double.parseDouble(extras.getString("vdelta"));
             double cont_xsup  = Double.parseDouble(extras.getString("vxsup"));
             int cont = -1;
@@ -85,7 +100,12 @@ public class incrementalActivity extends AppCompatActivity {
         findViewById(R.id.go_methods).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(incrementalActivity.this, Main3Activity.class));
+                Intent i = new Intent(incrementalActivity.this, Main3Activity.class);
+                i.putExtra("funcion1", getFuncion());
+                //i.putExtra("vdelta", delta);
+                startActivityForResult(i,2);
+
+                //startActivity(new Intent(incrementalActivity.this, Main3Activity.class));
             }
         });
 

@@ -18,9 +18,9 @@ import java.util.ArrayList;
 public class Incremental_searches_parameters extends AppCompatActivity {
 
     private EditText editTextFunction;
-    private EditText editTextX;
+    private EditText editTextxInf;
     private EditText editTextDelta;
-    private EditText editTextIterations;
+    private EditText editTextxSup;
     private Button buttonSearch;
     private ArrayList<String> arrayList;
     private ArrayAdapter<String> adapter;
@@ -32,9 +32,9 @@ public class Incremental_searches_parameters extends AppCompatActivity {
         setContentView(R.layout.activity_incremental_searches_parameters);
 
         editTextFunction = (EditText) findViewById(R.id.editText);
-        editTextX = (EditText) findViewById(R.id.editText4);
+        editTextxInf = (EditText) findViewById(R.id.editText4);
         editTextDelta = (EditText) findViewById(R.id.editText2);
-        editTextIterations = (EditText) findViewById(R.id.editText3);
+        editTextxSup = (EditText) findViewById(R.id.editText3);
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
         lv = (ListView) findViewById(R.id.listViewDatos);
         arrayList = new ArrayList<String>();
@@ -47,17 +47,17 @@ public class Incremental_searches_parameters extends AppCompatActivity {
             public void onClick(View v) {
 
                 String function = editTextFunction.getText().toString();
-                String xIni = editTextX.getText().toString();
+                String xInf = editTextxInf.getText().toString();
                 String delta = editTextDelta.getText().toString();
-                String xsup = editTextIterations.getText().toString();
+                String xSup = editTextxSup.getText().toString();
 
                 Intent i = new Intent(Incremental_searches_parameters.this, incrementalActivity.class);
                 i.putExtra("vfun", function);
-                i.putExtra("vxini", xIni);
+                i.putExtra("vxinf", xInf);
                 i.putExtra("vdelta", delta);
-                i.putExtra("vxsup", xsup);
-                startActivity(i);
-                startActivity(new Intent(Incremental_searches_parameters.this, incrementalActivity.class));
+                i.putExtra("vxsup", xSup);
+                startActivityForResult(i,1);
+                //startActivity(new Intent(Incremental_searches_parameters.this, incrementalActivity.class));
 
                     /*expr = new ExpressionBuilder(function)
                             .variables("x","e","π")

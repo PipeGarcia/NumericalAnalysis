@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Main2Activity">
+    tools:context=".BisectionParameters">
     
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set the inferior x:"
+        android:text="Set a:"
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
@@ -58,8 +58,9 @@
         android:layout_alignBottom="@+id/textView3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignLeft="@+id/iter_param"
+        android:layout_alignStart="@+id/iter_param" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,7 +75,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set the superior x"
+        android:text="Set b:"
         android:id="@+id/textView5"
         android:textSize="@dimen/abc_dialog_padding_top_material"
         android:layout_above="@+id/tol_param"
@@ -85,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tol_param"
-        android:hint="Ej: 0,000006"
+        android:hint="Ej: 0.000006"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -148,7 +149,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/delta_param"
-        android:hint="Ej: 0,05"
+        android:hint="Ej: 1"
         android:layout_alignTop="@+id/textView15"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

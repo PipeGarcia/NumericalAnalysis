@@ -39,8 +39,8 @@
         android:id="@+id/editText"
         android:hint="Ej: cos(x)"
         android:layout_alignBottom="@+id/textView22"
-        android:layout_toRightOf="@+id/editText2"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,8 +59,8 @@
         android:id="@+id/editText2"
         android:hint="Ej: 1"
         android:layout_above="@+id/textView24"
-        android:layout_toRightOf="@+id/textView22"
-        android:layout_toEndOf="@+id/textView22" />
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,16 +77,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText3"
-        android:hint="Ej: 200"
+        android:hint="Ej: 100"
         android:layout_toRightOf="@+id/textView24"
         android:layout_alignBottom="@+id/textView24"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set the initial x:"
+        android:text="Set the inferior x:"
         android:id="@+id/textView25"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:textIsSelectable="false"
@@ -100,8 +100,8 @@
         android:id="@+id/editText4"
         android:hint="Ej: -100"
         android:layout_alignBottom="@+id/textView25"
-        android:layout_toRightOf="@+id/textView22"
-        android:layout_toEndOf="@+id/textView22" />
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
 
     <Button
         android:layout_width="wrap_content"
