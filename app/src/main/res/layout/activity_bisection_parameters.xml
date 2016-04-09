@@ -149,7 +149,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/delta_param"
-        android:hint="Ej: 1"
+        android:hint="Ej: 0.0001"
         android:layout_alignTop="@+id/textView15"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
