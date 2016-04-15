@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BisectionParameters" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity" />
+        <activity android:name=".Methods" />
+        <activity android:name=".BisectionResult" />
         <activity
             android:name=".eqsystemsActivity"
             android:label="@string/title_activity_eqsystems"
@@ -32,6 +32,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".incrementalActivity" />
         <activity android:name=".Incremental_searches_parameters" />
+        <activity android:name=".FalsePositionParameters" />
+        <activity android:name=".FalsePositionResult" />
+        <activity android:name=".FixedPointParameters" />
+        <activity android:name=".FixedPointResult" />
+        <activity android:name=".SecantParameters" />
+        <activity android:name=".SecantResult"></activity>
     </application>
 
 </manifest>

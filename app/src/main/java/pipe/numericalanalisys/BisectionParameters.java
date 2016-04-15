@@ -21,9 +21,11 @@ public class BisectionParameters extends AppCompatActivity {
 
     //Declaración de variables
     EditText vfun;
-    EditText vxinf;
-    EditText vxsup;
+    EditText vA;
+    EditText vB;
     EditText vdelta;
+    EditText vTol;
+    EditText vIter;
     private TextView tv;
 
     @Override
@@ -35,9 +37,11 @@ public class BisectionParameters extends AppCompatActivity {
 
         //variables
         vfun   =  (EditText)findViewById(R.id.fun_param);
-        vxinf  =  (EditText)findViewById(R.id.infx_param);
-        vxsup  =  (EditText)findViewById(R.id.supx_param);
+        vA  =  (EditText)findViewById(R.id.a_param);
+        vB  =  (EditText)findViewById(R.id.b_param);
         vdelta =  (EditText)findViewById(R.id.delta_param);
+        vTol = (EditText)findViewById(R.id.tol_param);
+        vIter = (EditText)findViewById(R.id.iter_param);
 
         Bundle extras1 = getIntent().getExtras();
         if(extras1 != null) {
@@ -52,16 +56,20 @@ public class BisectionParameters extends AppCompatActivity {
             public void onClick(View v) {
                 //capturar datos
                 String fun   = vfun.getText().toString();
-                String xinf  = vxinf.getText().toString();
-                String xsup  = vxsup.getText().toString();
+                String a  = vA.getText().toString();
+                String b  = vB.getText().toString();
                 String delta = vdelta.getText().toString();
+                String tol = vTol.getText().toString();
+                String iter = vIter.getText().toString();
 
-                Intent i = new Intent(BisectionParameters.this, Main4Activity.class);
+                Intent i = new Intent(BisectionParameters.this, BisectionResult.class);
                 i.putExtra("vfun", fun);
-                i.putExtra("vxinf", xinf);
-                i.putExtra("vxsup", xsup);
+                i.putExtra("va", a);
+                i.putExtra("vb", b);
                 i.putExtra("vdelta", delta);
-                startActivityForResult(i,4);
+                i.putExtra("vtol", tol);
+                i.putExtra("viter", iter);
+                startActivityForResult(i, 5);
                 //startActivity(new Intent(BisectionParameters.this, incrementalActivity.class));
 
             }

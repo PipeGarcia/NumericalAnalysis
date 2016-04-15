@@ -6,14 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
+
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
-import net.objecthunter.exp4j.function.Function;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.List;
 
 public class incrementalActivity extends AppCompatActivity {
 
@@ -50,8 +47,8 @@ public class incrementalActivity extends AppCompatActivity {
             String cont_fun   = extras.getString("vfun");
             setFuncion(cont_fun);
 
-            TextView tv = (TextView) findViewById(R.id.textView20);
-            tv.setText(String.valueOf(getFuncion()));
+            //TextView tv = (TextView) findViewById(R.id.textView20);
+            //tv.setText(String.valueOf(getFuncion()));
 
             double cont_xini  = Double.parseDouble(extras.getString("vxinf"));
             double cont_delta  = Double.parseDouble(extras.getString("vdelta"));
@@ -100,12 +97,12 @@ public class incrementalActivity extends AppCompatActivity {
         findViewById(R.id.go_methods).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(incrementalActivity.this, Main3Activity.class);
+                Intent i = new Intent(incrementalActivity.this, Methods.class);
                 i.putExtra("funcion1", getFuncion());
                 //i.putExtra("vdelta", delta);
                 startActivityForResult(i,2);
 
-                //startActivity(new Intent(incrementalActivity.this, Main3Activity.class));
+                //startActivity(new Intent(incrementalActivity.this, Methods.class));
             }
         });
 

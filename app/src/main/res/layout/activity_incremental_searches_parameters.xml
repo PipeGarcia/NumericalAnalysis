@@ -12,14 +12,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Incremental Searches Param"
+        android:text="Incremental Searches"
         android:id="@+id/textView21"
-        android:layout_alignParentTop="true"
         android:textSize="@dimen/abc_dialog_padding_material"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentBottom="false"
         android:layout_alignWithParentIfMissing="false"
-        android:elegantTextHeight="false" />
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +30,7 @@
         android:textIsSelectable="false"
         android:layout_below="@+id/textView21"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="false" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -49,7 +48,7 @@
         android:id="@+id/textView23"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:textIsSelectable="false"
-        android:layout_below="@+id/textView25"
+        android:layout_above="@+id/editText3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -58,9 +57,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
         android:hint="Ej: 1"
-        android:layout_above="@+id/textView24"
-        android:layout_toRightOf="@+id/textView24"
-        android:layout_toEndOf="@+id/textView24" />
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:inputType="numberDecimal"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +69,10 @@
         android:id="@+id/textView24"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:textIsSelectable="false"
-        android:layout_below="@+id/textView23"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        //android:layout_below="@+id/textView23"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -81,7 +84,8 @@
         android:layout_toRightOf="@+id/textView24"
         android:layout_alignBottom="@+id/textView24"
         android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignEnd="@+id/editText"
+        android:inputType="numberSigned"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +94,7 @@
         android:id="@+id/textView25"
         android:textSize="@dimen/abc_select_dialog_padding_start_material"
         android:textIsSelectable="false"
-        android:layout_below="@+id/editText"
+        android:layout_above="@+id/editText2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -101,23 +105,17 @@
         android:hint="Ej: -100"
         android:layout_alignBottom="@+id/textView25"
         android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
+        android:layout_alignStart="@+id/editText3"
+        android:inputType="numberSigned"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/buttonSearch"
+        android:layout_marginTop="54dp"
         android:layout_below="@+id/textView24"
         android:layout_alignRight="@+id/editText4"
         android:layout_alignEnd="@+id/editText4" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listViewDatos"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/buttonSearch" />
 
 </RelativeLayout>

@@ -7,149 +7,146 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".BisectionParameters">
-    
+    tools:context="pipe.numericalanalisys.FalsePositionParameters">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Initial Parameters"
-        android:id="@+id/textView"
+        android:id="@+id/textView20"
+        android:textSize="@dimen/abc_dialog_padding_material"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="@dimen/abc_dialog_padding_material" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the function:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:id="@+id/textView27"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_below="@+id/textView20"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp"
-        android:textSize="@dimen/abc_dialog_padding_top_material" />
+        android:layout_marginTop="46dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fun_param"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/editTextFunction"
         android:hint="Ej: x^2+3"
-        android:layout_toEndOf="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4" />
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set a:"
-        android:id="@+id/textView3"
+        android:id="@+id/textView29"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_alignBottom="@+id/a_param"
+        android:layout_alignBottom="@+id/editTextA"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/a_param"
+        android:id="@+id/editTextA"
         android:hint="Ej: -3"
         android:inputType="numberSigned"
-        android:layout_below="@+id/fun_param"
-        android:layout_alignRight="@+id/fun_param"
-        android:layout_alignEnd="@+id/fun_param" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Set the tolerance:"
-        android:id="@+id/textView4"
-        android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_alignBottom="@+id/tol_param"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/editTextFunction"
+        android:layout_alignRight="@+id/editTextFunction"
+        android:layout_alignEnd="@+id/editTextFunction" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set b:"
-        android:id="@+id/textView5"
+        android:id="@+id/textView30"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_alignBottom="@+id/b_param"
+        android:layout_alignBottom="@+id/editTextB"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tol_param"
+        android:id="@+id/editTextB"
+        android:hint="Ej: -2"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/editTextA"
+        android:layout_alignLeft="@+id/editTextA"
+        android:layout_alignStart="@+id/editTextA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the tolerance:"
+        android:id="@+id/textView31"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_alignBottom="@+id/editTextTolerance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTolerance"
         android:hint="Ej: 0.02"
         android:inputType="numberDecimal"
-        android:layout_below="@+id/textView5"
-        android:layout_alignRight="@+id/b_param"
-        android:layout_alignEnd="@+id/b_param" />
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the number of iterations:"
-        android:id="@+id/textView6"
+        android:id="@+id/textView32"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_alignBottom="@+id/iter_param"
+        android:layout_alignBottom="@+id/editTextIterations"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/iter_param"
+        android:id="@+id/editTextIterations"
         android:hint="Ej: 100"
         android:inputType="numberDecimal"
-        android:layout_below="@+id/delta_param"
-        android:layout_alignRight="@+id/delta_param"
-        android:layout_alignEnd="@+id/delta_param" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Continue"
-        android:id="@+id/bcontinue"
-        android:textSize="@dimen/abc_dialog_padding_material"
-        android:background="#29decc"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/textView6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/b_param"
-        android:hint="Ej: -2"
-        android:inputType="numberSigned"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/a_param"
-        android:layout_alignStart="@+id/a_param" />
+        android:layout_below="@+id/textView33"
+        android:layout_alignRight="@+id/editTextDelta"
+        android:layout_alignEnd="@+id/editTextDelta" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the delta:"
-        android:id="@+id/textView15"
+        android:id="@+id/textView33"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_alignBottom="@+id/delta_param"
+        android:layout_alignBottom="@+id/editTextDelta"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/btnContinue"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:background="#29decc"
+        android:textColor="#ffffff"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/delta_param"
+        android:id="@+id/editTextDelta"
         android:hint="Ej: 1"
         android:inputType="numberDecimal"
-        android:layout_below="@+id/textView4"
-        android:layout_alignRight="@+id/tol_param"
-        android:layout_alignEnd="@+id/tol_param" />
-
+        android:layout_below="@+id/textView31"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
