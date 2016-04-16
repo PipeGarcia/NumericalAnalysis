@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gaussian Elimination"
-        android:id="@+id/button9"
+        android:id="@+id/b_gauss_elim"
         android:layout_marginTop="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -27,25 +27,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cholesky"
-        android:id="@+id/button10"
-        android:layout_below="@+id/button9"
+        android:id="@+id/b_cholesky"
+        android:layout_below="@+id/b_gauss_elim"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="52dp"
         android:background="#0208b8"
-        android:layout_alignRight="@+id/button9"
-        android:layout_alignEnd="@+id/button9" />
+        android:layout_alignRight="@+id/b_gauss_elim"
+        android:layout_alignEnd="@+id/b_gauss_elim" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Doolittle"
-        android:id="@+id/button11"
+        android:id="@+id/b_doolittle"
         android:layout_marginTop="82dp"
-        android:layout_below="@+id/button10"
+        android:layout_below="@+id/b_cholesky"
         android:background="#f823e3"
-        android:layout_alignRight="@+id/button10"
-        android:layout_alignEnd="@+id/button10"
+        android:layout_alignRight="@+id/b_cholesky"
+        android:layout_alignEnd="@+id/b_cholesky"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -53,8 +53,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Crout"
-        android:id="@+id/button12"
-        android:layout_alignBottom="@+id/button9"
+        android:id="@+id/b_crout"
+        android:layout_alignBottom="@+id/b_gauss_elim"
         android:background="#de4d0a"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -65,26 +65,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jacobi"
-        android:id="@+id/button13"
-        android:layout_above="@+id/button11"
-        android:layout_alignLeft="@+id/button12"
-        android:layout_alignStart="@+id/button12"
+        android:id="@+id/b_jacobi"
+        android:layout_above="@+id/b_doolittle"
+        android:layout_alignLeft="@+id/b_crout"
+        android:layout_alignStart="@+id/b_crout"
         android:elegantTextHeight="false"
         android:background="#e5f506"
-        android:layout_alignRight="@+id/button12"
-        android:layout_alignEnd="@+id/button12" />
+        android:layout_alignRight="@+id/b_crout"
+        android:layout_alignEnd="@+id/b_crout" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gauss Seidel"
-        android:id="@+id/button14"
-        android:layout_alignBottom="@+id/button11"
-        android:layout_alignRight="@+id/button13"
-        android:layout_alignEnd="@+id/button13"
+        android:id="@+id/b_seidel"
+        android:layout_alignBottom="@+id/b_doolittle"
+        android:layout_alignRight="@+id/b_jacobi"
+        android:layout_alignEnd="@+id/b_jacobi"
         android:background="#13eac6"
-        android:layout_alignLeft="@+id/button13"
-        android:layout_alignStart="@+id/button13" />
+        android:layout_alignLeft="@+id/b_jacobi"
+        android:layout_alignStart="@+id/b_jacobi" />
 
     <TextView
         android:layout_width="wrap_content"
