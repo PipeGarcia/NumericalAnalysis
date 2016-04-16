@@ -93,5 +93,7 @@
         android:text="Métodos"
         android:id="@+id/textView16"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#0b0a0a"
+        android:textSize="24dp" />
 </RelativeLayout>

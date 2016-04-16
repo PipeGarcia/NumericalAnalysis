@@ -20,11 +20,11 @@
         <activity android:name=".BisectionResult" />
         <activity
             android:name=".eqsystemsActivity"
-            android:label="@string/title_activity_eqsystems"
+            android:label="Equation Systems"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".interpolationActivity"
-            android:label="@string/title_activity_interpolation"
+            android:label="Interpolation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".chooseActivity"

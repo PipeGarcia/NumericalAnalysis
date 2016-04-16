@@ -19,7 +19,9 @@
         android:text="Métodos"
         android:id="@+id/textView17"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#0d0c0c"
+        android:textSize="24dp" />
 
     <Button
         android:layout_width="wrap_content"

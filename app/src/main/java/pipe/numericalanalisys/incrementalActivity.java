@@ -34,6 +34,7 @@ public class incrementalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_incremental);
+        setTitle("");
 
         lv = (ListView) findViewById(R.id.listViewDatos);
         arrayList = new ArrayList<String>();
