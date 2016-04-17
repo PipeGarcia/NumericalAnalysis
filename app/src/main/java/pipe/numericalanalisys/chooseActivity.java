@@ -16,6 +16,7 @@ public class chooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Welcome");
 
         findViewById(R.id.b_onevariable).setOnClickListener(new View.OnClickListener() {
             @Override

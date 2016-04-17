@@ -20,11 +20,11 @@
         <activity android:name=".BisectionResult" />
         <activity
             android:name=".eqsystemsActivity"
-            android:label="@string/title_activity_eqsystems"
+            android:label="Equation Systems"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".interpolationActivity"
-            android:label="@string/title_activity_interpolation"
+            android:label="Interpolation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".chooseActivity"
@@ -38,6 +38,12 @@
         <activity android:name=".FixedPointResult" />
         <activity android:name=".SecantParameters" />
         <activity android:name=".SecantResult" />
+        <activity android:name=".CholeskyParameters" />
+        <activity android:name=".CroutParameters" />
+        <activity android:name=".DoolittleParameters" />
+        <activity android:name=".JacobiParameters" />
+        <activity android:name=".GaussSeidelParameters" />
+        <activity android:name=".GaussElimParameters"></activity>
         <activity android:name=".NewtonRaphsonParameters" />
         <activity android:name=".NewtonRaphsonResult" />
         <activity android:name=".MultipleRootsParameters" />

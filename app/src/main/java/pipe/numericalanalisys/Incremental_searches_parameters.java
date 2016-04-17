@@ -30,6 +30,7 @@ public class Incremental_searches_parameters extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_incremental_searches_parameters);
+        setTitle("Initial Parameters");
 
         editTextFunction = (EditText) findViewById(R.id.editText);
         editTextxInf = (EditText) findViewById(R.id.editText4);

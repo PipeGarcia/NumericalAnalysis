@@ -23,6 +23,7 @@ public class Methods extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_methods);
+        setTitle("One Variable");
 
         textView = (TextView)findViewById(R.id.textView7);
 
