@@ -67,7 +67,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView8"
+        android:id="@+id/listViewN"
         android:layout_below="@+id/textView61"
         android:layout_toRightOf="@+id/textView65"
         android:layout_toEndOf="@+id/textView65"
@@ -76,7 +76,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView9"
+        android:id="@+id/listViewX"
         android:layout_alignTop="@+id/textView63"
         android:layout_toRightOf="@+id/textView65"
         android:layout_toEndOf="@+id/textView65"
@@ -85,17 +85,17 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView10"
+        android:id="@+id/listViewFX"
         android:layout_alignTop="@+id/textView64"
-        android:layout_alignLeft="@+id/listView9"
-        android:layout_alignStart="@+id/listView9"
+        android:layout_alignLeft="@+id/listViewX"
+        android:layout_alignStart="@+id/listViewX"
         android:layout_alignBottom="@+id/textView64" />
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView11"
+        android:id="@+id/listViewERROR"
         android:layout_alignTop="@+id/textView65"
-        android:layout_alignLeft="@+id/listView10"
-        android:layout_alignStart="@+id/listView10" />
+        android:layout_alignLeft="@+id/listViewFX"
+        android:layout_alignStart="@+id/listViewFX" />
 </RelativeLayout>

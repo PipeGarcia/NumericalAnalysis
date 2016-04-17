@@ -82,13 +82,23 @@ public class Methods extends AppCompatActivity {
         findViewById(R.id.newtonRaphsonButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Methods.this, BisectionResult.class));
+
+                Intent i = new Intent(Methods.this, NewtonRaphsonParameters.class);
+                i.putExtra("funcion", getFuncion1());
+                startActivityForResult(i,9);
+
+                //startActivity(new Intent(Methods.this, BisectionResult.class));
             }
         });
         findViewById(R.id.multipleRootsButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Methods.this, BisectionResult.class));
+
+                Intent i = new Intent(Methods.this, MultipleRootsParameters.class);
+                i.putExtra("funcion", getFuncion1());
+                startActivityForResult(i,11);
+
+                //startActivity(new Intent(Methods.this, BisectionResult.class));
             }
         });
     }

@@ -76,12 +76,6 @@ public class incrementalActivity extends AppCompatActivity {
                     }else if(Double.parseDouble(arrayListFuncResult.get(cont-1)) >= 0 &&
                             Double.parseDouble(arrayListFuncResult.get(cont)) < 0){
                         arrayList.add(String.valueOf(i-1 + "," + i));
-                    }else if (Double.parseDouble(arrayListFuncResult.get(cont-1)) == 0 &&
-                            Double.parseDouble(arrayListFuncResult.get(cont)) > 0){
-                        arrayList.add(String.valueOf(i-1 + "," + i));
-                    }else if (Double.parseDouble(arrayListFuncResult.get(cont-1)) < 0 &&
-                            Double.parseDouble(arrayListFuncResult.get(cont)) == 0){
-                        arrayList.add(String.valueOf(i-1 + "," + i));
                     }
 
                     if(arrayList.isEmpty()){

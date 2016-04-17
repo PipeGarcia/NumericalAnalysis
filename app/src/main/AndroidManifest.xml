@@ -37,7 +37,11 @@
         <activity android:name=".FixedPointParameters" />
         <activity android:name=".FixedPointResult" />
         <activity android:name=".SecantParameters" />
-        <activity android:name=".SecantResult"></activity>
+        <activity android:name=".SecantResult" />
+        <activity android:name=".NewtonRaphsonParameters" />
+        <activity android:name=".NewtonRaphsonResult" />
+        <activity android:name=".MultipleRootsParameters" />
+        <activity android:name=".MultipleRootsResult"></activity>
     </application>
 
 </manifest>

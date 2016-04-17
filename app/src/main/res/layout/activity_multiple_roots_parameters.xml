@@ -7,13 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pipe.numericalanalisys.FixedPointParameters">
+    tools:context="pipe.numericalanalisys.MultipleRootsParameters">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Initial Parameters"
-        android:id="@+id/textView49"
+        android:id="@+id/textView79"
         android:textSize="@dimen/abc_dialog_padding_material"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -22,86 +22,101 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set f(x):"
-        android:id="@+id/textView28"
+        android:id="@+id/textView80"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_marginTop="45dp"
-        android:layout_below="@+id/textView49"
+        android:layout_below="@+id/textView79"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextFx"
+        android:id="@+id/editTextFX"
         android:hint="Ej: x^2+3"
-        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignBottom="@+id/textView80"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView28"
-        android:layout_toEndOf="@+id/textView28" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set g(x):"
-        android:id="@+id/textView43"
+        android:text="Set f&apos;(x):"
+        android:id="@+id/textView81"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_below="@+id/textView28"
+        android:layout_below="@+id/textView80"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
-        android:layout_marginTop="25dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextGx"
+        android:id="@+id/editTextF1X"
         android:hint="Ej: x^2+3"
-        android:layout_alignBottom="@+id/textView43"
-        android:layout_toRightOf="@+id/textView43"
-        android:layout_alignRight="@+id/editTextFx"
-        android:layout_alignEnd="@+id/editTextFx" />
+        android:layout_below="@+id/editTextFX"
+        android:layout_alignLeft="@+id/editTextFX"
+        android:layout_alignStart="@+id/editTextFX" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set f&apos;&apos;(x):"
+        android:id="@+id/textView82"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_below="@+id/editTextF1X"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextF2X"
+        android:hint="Ej: x^2+3"
+        android:layout_above="@+id/textView83"
+        android:layout_alignLeft="@+id/editTextF1X"
+        android:layout_alignStart="@+id/editTextF1X" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the initial x:"
-        android:id="@+id/textView44"
+        android:id="@+id/textView83"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_below="@+id/textView43"
+        android:layout_below="@+id/textView82"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editTextInitialX"
         android:hint="Ej: -3"
-        android:inputType="numberDecimal|numberSigned"
-        android:layout_alignBottom="@+id/textView44"
-        android:layout_alignRight="@+id/editTextGx"
-        android:layout_alignEnd="@+id/editTextGx"
-        android:layout_toRightOf="@+id/textView49"
-        android:layout_toEndOf="@+id/textView49" />
+        android:inputType="numberSigned|numberDecimal"
+        android:layout_alignBottom="@+id/textView83"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the tolerance:"
-        android:id="@+id/textView45"
+        android:id="@+id/textView84"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_below="@+id/textView44"
+        android:layout_below="@+id/textView83"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextTol"
+        android:id="@+id/editTextTolerance"
         android:hint="Ej: 0.02"
         android:inputType="numberDecimal"
-        android:layout_alignBottom="@+id/textView45"
+        android:layout_below="@+id/editTextInitialX"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -109,20 +124,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the delta:"
-        android:id="@+id/textView46"
+        android:id="@+id/textView85"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_below="@+id/textView45"
+        android:layout_below="@+id/editTextTolerance"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextDel"
+        android:id="@+id/editTextDelta"
         android:hint="Ej: 1"
         android:inputType="numberDecimal"
-        android:layout_alignBottom="@+id/textView46"
+        android:layout_alignBottom="@+id/textView85"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -130,20 +145,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set the number of iterations:"
-        android:id="@+id/textView47"
+        android:id="@+id/textView86"
         android:textSize="@dimen/abc_dialog_padding_top_material"
-        android:layout_below="@+id/textView46"
+        android:layout_below="@+id/textView85"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextIter"
+        android:id="@+id/editTextIterations"
         android:hint="Ej: 100"
         android:inputType="number"
-        android:layout_alignBottom="@+id/textView47"
+        android:layout_alignBottom="@+id/textView86"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -151,11 +166,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Continue"
-        android:id="@+id/buttonCont"
+        android:id="@+id/buttonContinue"
         android:textSize="@dimen/abc_dialog_padding_material"
         android:background="#29decc"
         android:textColor="#ffffff"
-        android:layout_below="@+id/textView47"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
+        android:layout_below="@+id/textView86"
+        android:layout_toRightOf="@+id/textView83"
+        android:layout_toEndOf="@+id/textView83"
+        android:layout_marginTop="43dp" />
 </RelativeLayout>

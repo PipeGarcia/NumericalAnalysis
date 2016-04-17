@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextA"
         android:hint="Ej: -3"
-        android:inputType="numberSigned"
+        android:inputType="numberSigned|numberDecimal"
         android:layout_alignBottom="@+id/textView56"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextB"
         android:hint="Ej: -2"
-        android:inputType="numberSigned"
+        android:inputType="numberSigned|numberDecimal"
         android:layout_alignBottom="@+id/textView57"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -138,7 +138,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/editTextIterations"
         android:hint="Ej: 100"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:layout_below="@+id/editTextDelta"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
