@@ -2,21 +2,26 @@ package pipe.numericalanalisys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 
 public class GaussElimParameters extends AppCompatActivity {
 
     TableLayout matrixinput;
     TableLayout vectorbinput;
-    int size;
+    int vsize;
     EditText editTextsize;
 
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
+    //public View onCreateView(LayoutInflater inflater, ViewGroup container,
+      //                       Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gauss_elim_parameters);
         setTitle("Gauss Elimination");
@@ -24,15 +29,16 @@ public class GaussElimParameters extends AppCompatActivity {
           mostraran la matriz y el vector B
         */
         editTextsize = (EditText) findViewById(R.id.matrix_size);
-        matrixinput = (TableLayout) findViewById(R.id.matrixA);
-        vectorbinput = (TableLayout) findViewById(R.id.VectorB);
-        final Button btnCalculate = (Button) findViewById(R.id.b_calculate);
-
+        //matrixinput = (TableLayout) findViewById(R.id.matrixA);
+        //vectorbinput = (TableLayout) findViewById(R.id.VectorB);
+        //final Button btnCalculate = (Button) findViewById(R.id.b_calculate);
         findViewById(R.id.b_generate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            //generar la matriz
-
+            matrixinput.removeAllViews();
+            vectorbinput.removeAllViews();
+            String size = editTextsize.getText().toString();
+            vsize = Integer.parseInt(size);
 
             }
         });
