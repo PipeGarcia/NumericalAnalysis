@@ -43,11 +43,12 @@
         <activity android:name=".DoolittleParameters" />
         <activity android:name=".JacobiParameters" />
         <activity android:name=".GaussSeidelParameters" />
-        <activity android:name=".GaussElimParameters"></activity>
+        <activity android:name=".GaussElimParameters" />
         <activity android:name=".NewtonRaphsonParameters" />
         <activity android:name=".NewtonRaphsonResult" />
         <activity android:name=".MultipleRootsParameters" />
-        <activity android:name=".MultipleRootsResult"></activity>
+        <activity android:name=".MultipleRootsResult" />
+        <activity android:name=".GaussElimResult"></activity>
     </application>
 
 </manifest>

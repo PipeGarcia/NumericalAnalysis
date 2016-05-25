@@ -1,23 +1,22 @@
 package pipe.numericalanalisys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.InputType;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 
 public class GaussElimParameters extends AppCompatActivity {
 
     TableLayout matrixinput;
     TableLayout vectorbinput;
     int vsize;
-    EditText editTextsize;
+    EditText editTextMatrixA;
+    EditText editTextVectorB;
+
+
+    //private JTextArea result;
 
     protected void onCreate(Bundle savedInstanceState) {
     //public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,17 +27,26 @@ public class GaussElimParameters extends AppCompatActivity {
         /*inicializado la entrada de la matriz(tamaño), además de las tablas donde se
           mostraran la matriz y el vector B
         */
-        editTextsize = (EditText) findViewById(R.id.matrix_size);
+        editTextMatrixA = (EditText) findViewById(R.id.matrixA);
+        editTextVectorB = (EditText) findViewById(R.id.vectorB);
         //matrixinput = (TableLayout) findViewById(R.id.matrixA);
         //vectorbinput = (TableLayout) findViewById(R.id.VectorB);
         //final Button btnCalculate = (Button) findViewById(R.id.b_calculate);
-        findViewById(R.id.b_generate).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.b_solve).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            matrixinput.removeAllViews();
+           /* matrixinput.removeAllViews();
             vectorbinput.removeAllViews();
             String size = editTextsize.getText().toString();
-            vsize = Integer.parseInt(size);
+            vsize = Integer.parseInt(size);*/
+
+                String A = editTextMatrixA.getText().toString();
+                String B = editTextVectorB.getText().toString();
+
+                Intent i = new Intent(GaussElimParameters.this, GaussElimResult.class);
+                i.putExtra("matrixA", A);
+                i.putExtra("vectorB", B);
+                startActivityForResult(i, 20);
 
             }
         });
