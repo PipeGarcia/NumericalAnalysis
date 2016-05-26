@@ -52,7 +52,8 @@
         <activity android:name=".PartialPivotingParameters" />
         <activity android:name=".PartialPivotingResult" />
         <activity android:name=".TotalPivotingParameters" />
-        <activity android:name=".TotalPivotingResult"></activity>
+        <activity android:name=".TotalPivotingResult" />
+        <activity android:name=".CroutResult"></activity>
     </application>
 
 </manifest>
