@@ -114,49 +114,5 @@ public class GaussElimResult extends AppCompatActivity {
                     }
 
         }
-
-        /*textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku\t");
-        textView.append("Hola soy goku");
-
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku\t");
-        textView2.append("Hola soy goku");*/
     }
 }

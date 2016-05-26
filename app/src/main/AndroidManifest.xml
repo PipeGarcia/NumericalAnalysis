@@ -48,7 +48,11 @@
         <activity android:name=".NewtonRaphsonResult" />
         <activity android:name=".MultipleRootsParameters" />
         <activity android:name=".MultipleRootsResult" />
-        <activity android:name=".GaussElimResult"></activity>
+        <activity android:name=".GaussElimResult" />
+        <activity android:name=".PartialPivotingParameters" />
+        <activity android:name=".PartialPivotingResult" />
+        <activity android:name=".TotalPivotingParameters" />
+        <activity android:name=".TotalPivotingResult"></activity>
     </application>
 
 </manifest>

@@ -7,66 +7,75 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pipe.numericalanalisys.GaussElimResult"
+    tools:context="pipe.numericalanalisys.TotalPivotingResult"
     android:background="#89b6dd">
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView3" >
+            android:id="@+id/horizontalScrollView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Output"
-                    android:id="@+id/textView98"
+                    android:id="@+id/textView117"
                     android:textSize="@dimen/abc_dialog_padding_material"
                     android:layout_gravity="center_horizontal"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="false" />
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="AUGMENTED MATRIX"
-                    android:id="@+id/textView99"
-                    android:layout_below="@+id/textView98"
+                    android:id="@+id/textView118"
+                    android:textSize="@dimen/abc_dialog_padding_top_material"
+                    android:layout_below="@+id/textView117"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:textSize="@dimen/abc_dialog_padding_top_material" />
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView94"
+                    android:id="@+id/textView119"
                     android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_below="@+id/textView118"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView99"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="false" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="GAUSSIAN ELIMINATION"
-                    android:id="@+id/textView100"
+                    android:text="TOTAL PIVOTING"
+                    android:id="@+id/textView120"
                     android:textSize="@dimen/abc_dialog_padding_top_material"
-                    android:layout_below="@+id/textView94"
+                    android:layout_below="@+id/textView119"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="116dp" />
@@ -74,35 +83,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView101"
+                    android:id="@+id/textView121"
                     android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_below="@+id/textView120"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView100"
                     android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="false" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SOLUTIONS"
-                    android:id="@+id/textView102"
+                    android:id="@+id/textView122"
                     android:textSize="@dimen/abc_dialog_padding_top_material"
-                    android:layout_below="@+id/textView101"
+                    android:layout_marginTop="126dp"
+                    android:layout_below="@+id/textView121"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="126dp" />
+                    android:layout_alignParentStart="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView103"
+                    android:id="@+id/textView123"
                     android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_below="@+id/textView122"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView102"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="false" />
+
             </RelativeLayout>
         </HorizontalScrollView>
     </ScrollView>

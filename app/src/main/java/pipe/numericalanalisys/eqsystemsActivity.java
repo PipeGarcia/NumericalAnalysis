@@ -53,6 +53,18 @@ public class eqsystemsActivity extends AppCompatActivity {
                 startActivity(new Intent(eqsystemsActivity.this, GaussSeidelParameters.class));
             }
         });
+        findViewById(R.id.b_partial_pivoting).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(eqsystemsActivity.this, PartialPivotingParameters.class));
+            }
+        });
+        findViewById(R.id.b_total_pivoting).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(eqsystemsActivity.this, TotalPivotingParameters.class));
+            }
+        });
 
     }
 
