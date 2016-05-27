@@ -53,7 +53,9 @@
         <activity android:name=".PartialPivotingResult" />
         <activity android:name=".TotalPivotingParameters" />
         <activity android:name=".TotalPivotingResult" />
-        <activity android:name=".CroutResult"></activity>
+        <activity android:name=".CroutResult" />
+        <activity android:name=".CholeskyResult" />
+        <activity android:name=".DoolittleResult"></activity>
     </application>
 
 </manifest>
