@@ -9,4 +9,156 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pipe.numericalanalisys.JacobiParameters">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Parameters"
+        android:id="@+id/textView154"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the matrix A:"
+        android:id="@+id/textView155"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/textView154"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 4 -2 1;-1 1 -3;10 3 1"
+        android:ems="10"
+        android:id="@+id/editText11"
+        android:layout_below="@+id/textView155"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_floating_window_z" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the vector B:"
+        android:id="@+id/textView156"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_below="@+id/editText11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: -3;4;0"
+        android:ems="10"
+        android:id="@+id/editText12"
+        android:layout_below="@+id/textView156"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_floating_window_z" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the initial values of X:"
+        android:id="@+id/textView157"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/editText12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 0;0;0"
+        android:ems="10"
+        android:id="@+id/editText13"
+        android:layout_below="@+id/textView157"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_floating_window_z" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the tolerance:"
+        android:id="@+id/textView158"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_below="@+id/editText13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 0.01"
+        android:ems="10"
+        android:id="@+id/editText14"
+        android:layout_below="@+id/textView158"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_floating_window_z" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the delta:"
+        android:id="@+id/textView159"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/editText14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 0.001"
+        android:ems="10"
+        android:id="@+id/editText15"
+        android:layout_below="@+id/textView159"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/abc_floating_window_z" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:id="@+id/button4"
+        android:background="#f123b7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the number of iterations:"
+        android:id="@+id/textView167"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_below="@+id/editText15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 100"
+        android:ems="10"
+        android:id="@+id/editText16"
+        android:textSize="@dimen/abc_floating_window_z"
+        android:layout_below="@+id/textView167"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

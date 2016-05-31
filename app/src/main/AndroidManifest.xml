@@ -55,7 +55,8 @@
         <activity android:name=".TotalPivotingResult" />
         <activity android:name=".CroutResult" />
         <activity android:name=".CholeskyResult" />
-        <activity android:name=".DoolittleResult"></activity>
+        <activity android:name=".DoolittleResult" />
+        <activity android:name=".JacobiResult"></activity>
     </application>
 
 </manifest>
