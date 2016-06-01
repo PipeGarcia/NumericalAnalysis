@@ -29,6 +29,16 @@ public class GaussElimParameters extends AppCompatActivity {
         */
         editTextMatrixA = (EditText) findViewById(R.id.matrixA);
         editTextVectorB = (EditText) findViewById(R.id.vectorB);
+
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String matA = extras.getString("matrixA");
+            String vecB = extras.getString("vectorB");
+
+            editTextMatrixA.setText(matA);
+            editTextVectorB.setText(vecB);
+        }
+
         //matrixinput = (TableLayout) findViewById(R.id.matrixA);
         //vectorbinput = (TableLayout) findViewById(R.id.VectorB);
         //final Button btnCalculate = (Button) findViewById(R.id.b_calculate);

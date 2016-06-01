@@ -28,6 +28,15 @@ public class GaussSeidelParameters extends AppCompatActivity {
         editTextDelta = (EditText) findViewById(R.id.editText21);
         editTextIterations = (EditText) findViewById(R.id.editText22);
 
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String matA = extras.getString("matrixA");
+            String vecB = extras.getString("vectorB");
+
+            editTextMatrixA.setText(matA);
+            editTextVectorB.setText(vecB);
+        }
+
         findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

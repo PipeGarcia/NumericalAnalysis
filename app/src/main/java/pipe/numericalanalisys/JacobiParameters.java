@@ -28,6 +28,15 @@ public class JacobiParameters extends AppCompatActivity {
         editTextDelta = (EditText) findViewById(R.id.editText15);
         editTextIterations = (EditText) findViewById(R.id.editText16);
 
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
+            String matA = extras.getString("matrixA");
+            String vecB = extras.getString("vectorB");
+
+            editTextMatrixA.setText(matA);
+            editTextVectorB.setText(vecB);
+        }
+
         findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

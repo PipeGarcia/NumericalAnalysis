@@ -27,7 +27,7 @@ public class chooseActivity extends AppCompatActivity {
         findViewById(R.id.b_eqsystems).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseActivity.this, eqsystemsActivity.class));
+                startActivity(new Intent(chooseActivity.this, EquationSystemsParameters.class));
             }
         });
         findViewById(R.id.b_interpolation).setOnClickListener(new View.OnClickListener() {
