@@ -6,10 +6,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class JacobiResult extends AppCompatActivity {
+public class GaussSeidelResult extends AppCompatActivity {
 
     TextView textViewAugmentedMatrix;
-    TextView textViewJacobi;
+    TextView textViewGaussSeidel;
     TextView textViewSolutions;
 
     private ArrayList<String> errorTextView;
@@ -19,11 +19,11 @@ public class JacobiResult extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jacobi_result);
+        setContentView(R.layout.activity_gauss_seidel_result);
 
-        textViewAugmentedMatrix = (TextView)findViewById(R.id.textView162);
-        textViewJacobi = (TextView)findViewById(R.id.textView164);
-        textViewSolutions = (TextView)findViewById(R.id.textView166);
+        textViewAugmentedMatrix = (TextView)findViewById(R.id.textView177);
+        textViewGaussSeidel = (TextView)findViewById(R.id.textView179);
+        textViewSolutions = (TextView)findViewById(R.id.textView181);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
@@ -66,43 +66,38 @@ public class JacobiResult extends AppCompatActivity {
             }
             //Hasta aquí lo que hice en eclipse
 
-
                 double[] x = new double[n];
-                double errorInmediato = 0;
+                double errorInmediato;
                 int cont = 0;
-                double error = Double.parseDouble(tol) + 1;
+                double error = Double.parseDouble(tol)+1;
                 double norma = 1;
 
-                //System.out.println("x1" + "\t\t" + "x2" + "\t\t" + "x3");
-                //textViewJacobi.append("x1" + "\t\t" + "x2" + "\t\t" + "x3");
-
-                while(Math.abs(norma) > Double.parseDouble(del) && error > Double.parseDouble(tol) && cont < Integer.parseInt(iter))
+                while(Math.abs(norma) > Double.parseDouble(del) && error > Double.parseDouble(tol) && cont < Double.parseDouble(iter))
                 {
+
                     error = 0;
-                    textViewJacobi.append("\n");
-                    textViewJacobi.append("Iteration " + cont);
-                    textViewJacobi.append("\n");
+                    textViewGaussSeidel.append("\n");
+                    textViewGaussSeidel.append("Iteration " + cont);
+                    textViewGaussSeidel.append("\n");
 
                     for(int i = 0; i < n; i++)
                     {
 
                         if(cont == 0){
 
-                            textViewJacobi.append("x" + i + " = ");
-                            textViewJacobi.append(matrixX[i] + "\n");
+                                textViewGaussSeidel.append("x" + i + " = ");
+                                textViewGaussSeidel.append(matrixX[i] + "\n");
 
                         }else{
-
-                            System.out.print(x[i] + "\t");
-                            textViewJacobi.append("x" + i + " = ");
-                            textViewJacobi.append(x[i] + "\n");
-
+                            System.out.print(x[i] + "\t\t");
+                            textViewGaussSeidel.append("x" + i + " = ");
+                            textViewGaussSeidel.append(x[i] + "\n");
                         }
 
                         if(i == n-1)
                         {
                             System.out.println();
-                            textViewJacobi.append("\n");
+                            textViewGaussSeidel.append("\n");
                         }
 
                         double suma = 0;
@@ -129,14 +124,12 @@ public class JacobiResult extends AppCompatActivity {
 
                         }
 
-                        norma = Math.pow(norma, 2);
+                        norma = Math.pow(norma,2);
                         errorInmediato = x[i]-Double.parseDouble(matrixX[i]);
-                        error += Math.pow(errorInmediato, 2);
+                        error += Math.pow(errorInmediato,2);
+                        matrixX[i] = String.valueOf(x[i]);
 
                     }
-
-                    textViewJacobi.append("\n");
-
                     error = Math.sqrt(error);
 
                     //Error para poder empezar a imprimirlo desde la iteracion 2, porque en la iteracion 0 no hay error
@@ -144,26 +137,18 @@ public class JacobiResult extends AppCompatActivity {
 
                     if(cont > 1){
 
-                        textViewJacobi.append("||X" + cont + " - X" + (cont-1) + "|| = ");
-                        textViewJacobi.append(errorTextView.get(cont-1));
-                        textViewJacobi.append("\n");
+                        textViewGaussSeidel.append("||X" + cont + " - X" + (cont-1) + "|| = ");
+                        textViewGaussSeidel.append(errorTextView.get(cont - 1));
+                        textViewGaussSeidel.append("\n");
 
                     }
 
                     cont++;
-
-                    for(int i = 0; i < n; i++)
-                    {
-                        matrixX[i] = String.valueOf(x[i]);
-                    }
-
                 }
                 System.out.println();
-                textViewJacobi.append("\n");
-
                 if(error < Double.parseDouble(tol))
                 {
-                    System.out.println("La solucion aproximada del sistema es:" + "\n");
+                    System.out.println("La solucion aproxima del sistema es:" + "\n");
                     textViewSolutions.append("The approximate solution of the system is: \n\n");
 
                     for(int i = 0; i < n; i++)
@@ -171,8 +156,10 @@ public class JacobiResult extends AppCompatActivity {
                         System.out.print(x[i] + "\t");
                         textViewSolutions.append("x" + i + " = " + x[i] + "\n");
                     }
+
                 }else{
-                    System.out.println("Fracasó en esas iteraciones:" + "\t" + cont);
+
+                    System.out.println("Fracaso en esas iteraciones" + "\t" + cont);
                     textViewSolutions.append("Exceeded the number of iterations");
 
                 }

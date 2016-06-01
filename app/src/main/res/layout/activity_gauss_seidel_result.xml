@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pipe.numericalanalisys.GaussSeidelResult"
+    android:background="#89b6dd">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView8" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Output"
+                    android:id="@+id/textView175"
+                    android:textSize="@dimen/abc_dialog_padding_material"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AUGMENTED MATRIX"
+                    android:id="@+id/textView176"
+                    android:layout_below="@+id/textView175"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/abc_dialog_padding_top_material" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView177"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView176"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GAUSS SEIDEL"
+                    android:id="@+id/textView178"
+                    android:textSize="@dimen/abc_dialog_padding_top_material"
+                    android:layout_below="@+id/textView177"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="116dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView179"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView178"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOLUTIONS"
+                    android:id="@+id/textView180"
+                    android:textSize="@dimen/abc_dialog_padding_top_material"
+                    android:layout_below="@+id/textView179"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="126dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView181"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView180"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

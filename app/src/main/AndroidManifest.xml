@@ -56,7 +56,8 @@
         <activity android:name=".CroutResult" />
         <activity android:name=".CholeskyResult" />
         <activity android:name=".DoolittleResult" />
-        <activity android:name=".JacobiResult"></activity>
+        <activity android:name=".JacobiResult" />
+        <activity android:name=".GaussSeidelResult"></activity>
     </application>
 
 </manifest>
