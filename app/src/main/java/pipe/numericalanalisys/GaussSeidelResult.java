@@ -20,6 +20,7 @@ public class GaussSeidelResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gauss_seidel_result);
+        setTitle("Gauss Seidel");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView177);
         textViewGaussSeidel = (TextView)findViewById(R.id.textView179);

@@ -19,6 +19,7 @@ public class GaussElimResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gauss_elim_result);
+        setTitle("Gaussian Elimination");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView94);
         textViewGaussianElim = (TextView)findViewById(R.id.textView101);

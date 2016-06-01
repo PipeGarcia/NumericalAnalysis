@@ -16,6 +16,7 @@ public class DoolittleResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doolittle_result);
+        setTitle("Doolittle");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView149);
         textViewDoolittle = (TextView)findViewById(R.id.textView151);

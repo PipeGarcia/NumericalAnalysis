@@ -58,7 +58,12 @@
         <activity android:name=".DoolittleResult" />
         <activity android:name=".JacobiResult" />
         <activity android:name=".GaussSeidelResult" />
-        <activity android:name=".EquationSystemsParameters"></activity>
+        <activity android:name=".EquationSystemsParameters" />
+        <activity android:name=".IterativeMethodsParameters" />
+        <activity android:name=".IterativeMethods" />
+        <activity android:name=".RichardsonResult" />
+        <activity android:name=".SorParameters" />
+        <activity android:name=".SorResult"></activity>
     </application>
 
 </manifest>

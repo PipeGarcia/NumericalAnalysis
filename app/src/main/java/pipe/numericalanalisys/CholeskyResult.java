@@ -16,6 +16,7 @@ public class CholeskyResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cholesky_result);
+        setTitle("Cholesky");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView139);
         textViewCholesky = (TextView)findViewById(R.id.textView141);

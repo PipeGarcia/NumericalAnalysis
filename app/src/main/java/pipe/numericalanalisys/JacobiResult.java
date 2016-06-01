@@ -20,6 +20,7 @@ public class JacobiResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jacobi_result);
+        setTitle("Jacobi");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView162);
         textViewJacobi = (TextView)findViewById(R.id.textView164);

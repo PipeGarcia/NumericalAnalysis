@@ -17,6 +17,7 @@ public class CroutResult extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crout_result);
+        setTitle("Crout");
 
         textViewAugmentedMatrix = (TextView)findViewById(R.id.textView129);
         textViewCrout = (TextView)findViewById(R.id.textView131);

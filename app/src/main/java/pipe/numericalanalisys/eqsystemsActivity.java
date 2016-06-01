@@ -13,7 +13,7 @@ import android.widget.EditText;
 public class eqsystemsActivity extends AppCompatActivity {
 
     private String matrixA, vectorB;
-    private Button buttonPartialPivoting, buttonTotalPivoting, buttonStaggeredPivoting;
+    private Button buttonPartialPivoting, buttonTotalPivoting, buttonStaggeredPivoting, buttonJacobi, buttonGaussSeidel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,12 @@ public class eqsystemsActivity extends AppCompatActivity {
 
         buttonStaggeredPivoting = (Button) findViewById(R.id.b_staggered_pivoting);
         buttonStaggeredPivoting.setVisibility(View.INVISIBLE);
+
+        buttonJacobi = (Button) findViewById(R.id.b_jacobi);
+        buttonJacobi.setVisibility(View.INVISIBLE);
+
+        buttonGaussSeidel = (Button) findViewById(R.id.b_seidel);
+        buttonGaussSeidel.setVisibility(View.INVISIBLE);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
@@ -136,6 +142,15 @@ public class eqsystemsActivity extends AppCompatActivity {
                 startActivityForResult(i, 36);
 
                 //startActivity(new Intent(eqsystemsActivity.this, TotalPivotingParameters.class));
+            }
+        });
+        findViewById(R.id.b_iterative_methods).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(eqsystemsActivity.this, IterativeMethodsParameters.class);
+                i.putExtra("matrixA", matrixA);
+                i.putExtra("vectorB", vectorB);
+                startActivityForResult(i, 37);
             }
         });
 
