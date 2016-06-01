@@ -122,7 +122,7 @@ public class JacobiResult extends AppCompatActivity {
                         for(int k = 0; k < n; k++){
 
                             for(int l = 0; l < n; l++){
-                                N[i] = Double.parseDouble(matrizA[i][l])*Double.parseDouble(matrixX[l])-Double.parseDouble(matrizB[l]);
+                                N[i] = Double.parseDouble(matrizA[i][l])*x[l]-Double.parseDouble(matrizB[l]);
                             }
 
                             norma = norma + Math.pow(N[k],2);
