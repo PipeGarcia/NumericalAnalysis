@@ -49,6 +49,12 @@ public class interpolationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(interpolationActivity.this, LagrangeResult.class);
+                i.putExtra("x", x);
+                i.putExtra("fx", fx);
+                i.putExtra("point", point);
+                startActivityForResult(i, 47);
+
             }
         });
 

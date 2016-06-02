@@ -65,7 +65,8 @@
         <activity android:name=".SorParameters" />
         <activity android:name=".SorResult" />
         <activity android:name=".InterpolationParameters" />
-        <activity android:name=".NewtonPolynomialResult"></activity>
+        <activity android:name=".NewtonPolynomialResult" />
+        <activity android:name=".LagrangeResult"></activity>
     </application>
 
 </manifest>
