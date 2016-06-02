@@ -33,7 +33,7 @@ public class chooseActivity extends AppCompatActivity {
         findViewById(R.id.b_interpolation).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(chooseActivity.this, interpolationActivity.class));
+                startActivity(new Intent(chooseActivity.this, InterpolationParameters.class));
             }
         });
     }

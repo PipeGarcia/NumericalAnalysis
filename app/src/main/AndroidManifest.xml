@@ -63,7 +63,9 @@
         <activity android:name=".IterativeMethods" />
         <activity android:name=".RichardsonResult" />
         <activity android:name=".SorParameters" />
-        <activity android:name=".SorResult"></activity>
+        <activity android:name=".SorResult" />
+        <activity android:name=".InterpolationParameters" />
+        <activity android:name=".NewtonPolynomialResult"></activity>
     </application>
 
 </manifest>
