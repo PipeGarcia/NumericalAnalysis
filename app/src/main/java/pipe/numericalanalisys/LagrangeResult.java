@@ -57,7 +57,7 @@ public class LagrangeResult extends AppCompatActivity {
 
                 for(int i = 0; i < n; i++)
                 {
-                    textViewSolutions.append("L" + i + " = " + L[i] + "\n");
+                    textViewSolutions.append("L" + i + "(" + pointToInterpolate + ")" + " = " + L[i] + "\n");
                 }
 
                 double pol = 0;
