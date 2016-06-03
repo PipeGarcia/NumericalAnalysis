@@ -1,5 +1,6 @@
 package pipe.numericalanalisys;
 
+import android.support.annotation.StringRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -28,8 +29,9 @@ public class LagrangeResult extends AppCompatActivity {
             String x[] = vecX.split(";");
             String fx[] = vecFX.split(";");
 
-            int n = x.length;
 
+            int n = x.length;
+            String[] Lx = new String[n];
             for (int i = 0; i < n; i++) {
 
                 textViewPoints.append("\n");
@@ -46,11 +48,11 @@ public class LagrangeResult extends AppCompatActivity {
                     {
                         if(i != j)
                         {
-                            mult *= (Double.parseDouble(pointToInterpolate) - Double.parseDouble(x[j]))/(Double.parseDouble(x[i]) - Double.parseDouble(x[j]));
+                            mult = (Double.parseDouble(pointToInterpolate) - Double.parseDouble(x[j]))/(Double.parseDouble(x[i]) - Double.parseDouble(x[j]));
                         }
                     }
                     L[i] = mult;
-                    mult = 1;
+                //    mult = 1;
                 }
 
                 textViewSolutions.append("\n");
@@ -66,6 +68,35 @@ public class LagrangeResult extends AppCompatActivity {
                 {
                     pol += L[i]*Double.parseDouble(fx[i]);
                 }
+                String ptotal = "";
+
+
+            //L's
+            try {
+                for (int a = 0; a < n; a++) {
+                    for (int b = 0; b < n; b++) {
+                        if (b != a) {
+                            if(b==0){Lx[a]="";}
+                            Lx[a] += "[(x-" + x[b] + ")/(" + x[a] + "-" + x[b] + ")]";
+                        }
+
+                    }
+
+                }
+
+            }catch (Exception e){}
+
+                for (int t = 0; t < n;t++){
+                    if (t<(n-1)) {
+                        ptotal += fx[t] + "(" + Lx[t] + ")" + "+";
+                    }
+                    else{
+                        ptotal += fx[t] + "(" + Lx[t] + ")";
+                    }
+                }
+
+                textViewSolutions.append("\n");
+                textViewSolutions.append("P(x) = " + ptotal);
                 textViewSolutions.append("\n");
                 textViewSolutions.append("P(" + pointToInterpolate + ") = " + pol);
 
