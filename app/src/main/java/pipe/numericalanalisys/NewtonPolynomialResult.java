@@ -67,9 +67,34 @@ public class NewtonPolynomialResult extends AppCompatActivity {
 
                 }
 
+                String px= "";
+                for (int i = 0 ;i< n;i++){
+                    if(i == 0){
+                        px = String.valueOf(vectFx[i]);
+                    }
+                    if(i > 0 && i <= (n-2)){
+                        int aux = i;
+                        px += "+"+String.valueOf(vectFx[i]);
+                        for(int j = 0; j < aux;j++) {
+                            px += "(x-" + x[j] + ")";
+                        }
+                        px+="+";
+                    }
+                    else if(i == (n-1)){
+                        int aux = i;
+                        px+= String.valueOf(vectFx[i]);
+                        for(int j = 0; j < aux;j++) {
+                            px += "(x-" + x[j] + ")";
+                        }
+                    }
+                    else{px+="";}
+                }
+
                 //result.append("\n");
                 textViewSolutions.append("\n");
+                textViewSolutions.append("P(x) = " + px);
                 //result.append("P(" + puntoInterpolar + ") = " + mult);
+                textViewSolutions.append("\n");
                 textViewSolutions.append("P(" + pointToInterpolate + ") = " + mult);
                 //System.out.println("P("+ puntoInterpolar +")=" + mult);
 

@@ -71,7 +71,8 @@
         <activity android:name=".NumericalIntegration" />
         <activity android:name=".NumericalIntegrationParameters" />
         <activity android:name=".NumericalIntegrationMethods" />
-        <activity android:name=".TrapezeResult"></activity>
+        <activity android:name=".TrapezeResult" />
+        <activity android:name=".CubicResult" />
     </application>
 
 </manifest>
