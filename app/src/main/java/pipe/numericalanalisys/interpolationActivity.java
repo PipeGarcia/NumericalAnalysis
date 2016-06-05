@@ -62,6 +62,12 @@ public class interpolationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(interpolationActivity.this, LinearSplineResult.class);
+                i.putExtra("x", x);
+                i.putExtra("fx", fx);
+                i.putExtra("point", point);
+                startActivityForResult(i, 48);
+
             }
         });
 

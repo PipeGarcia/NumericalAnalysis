@@ -36,6 +36,12 @@ public class chooseActivity extends AppCompatActivity {
                 startActivity(new Intent(chooseActivity.this, InterpolationParameters.class));
             }
         });
+        findViewById(R.id.b_numerical_integration).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(chooseActivity.this, NumericalIntegration.class));
+            }
+        });
     }
 
 }

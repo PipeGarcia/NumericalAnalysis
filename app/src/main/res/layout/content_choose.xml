@@ -42,7 +42,7 @@
         android:text="Interpolation"
         android:id="@+id/b_interpolation"
         android:layout_below="@+id/b_eqsystems"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="45dp"
         android:layout_alignLeft="@+id/b_eqsystems"
         android:layout_alignStart="@+id/b_eqsystems"
         android:layout_alignRight="@+id/b_eqsystems"
@@ -56,6 +56,16 @@
         android:text="Choose the Method"
         android:id="@+id/textView18"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numerical Integration"
+        android:id="@+id/b_numerical_integration"
+        android:layout_marginTop="45dp"
+        android:background="#f42086e6"
+        android:layout_below="@+id/b_interpolation"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
