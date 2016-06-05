@@ -72,7 +72,7 @@
         <activity android:name=".NumericalIntegrationParameters" />
         <activity android:name=".NumericalIntegrationMethods" />
         <activity android:name=".TrapezeResult" />
-        <activity android:name=".CubicResult" />
+        <activity android:name=".CubicSplineResult" />
     </application>
 
 </manifest>

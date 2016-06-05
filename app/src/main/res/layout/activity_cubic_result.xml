@@ -7,6 +7,80 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pipe.numericalanalisys.CubicResult">
+    tools:context=".CubicSplineResult"
+    android:background="#89b6dd">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView15"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView15" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Output"
+                    android:id="@+id/textView237"
+                    android:textSize="@dimen/abc_dialog_padding_material"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POINTS"
+                    android:id="@+id/textView238"
+                    android:layout_below="@+id/textView237"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/abc_dialog_padding_top_material" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView239"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView238"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOLUTION"
+                    android:id="@+id/textView240"
+                    android:textSize="@dimen/abc_dialog_padding_top_material"
+                    android:layout_below="@+id/textView239"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="180dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView241"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView240"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
 </RelativeLayout>

@@ -2,8 +2,6 @@ package pipe.numericalanalisys;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -75,7 +73,7 @@ public class interpolationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(interpolationActivity.this, CubicResult.class);
+                Intent i = new Intent(interpolationActivity.this, CubicSplineResult.class);
                 i.putExtra("x", x);
                 i.putExtra("fx", fx);
                 i.putExtra("point", point);
