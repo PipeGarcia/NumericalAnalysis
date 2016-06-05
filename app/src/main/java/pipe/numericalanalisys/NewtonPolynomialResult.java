@@ -78,11 +78,11 @@ public class NewtonPolynomialResult extends AppCompatActivity {
                         for(int j = 0; j < aux;j++) {
                             px += "(x-" + x[j] + ")";
                         }
-                        px+="+";
+                        //px+="+";
                     }
                     else if(i == (n-1)){
                         int aux = i;
-                        px+= String.valueOf(vectFx[i]);
+                        px+= "+"+String.valueOf(vectFx[i]);
                         for(int j = 0; j < aux;j++) {
                             px += "(x-" + x[j] + ")";
                         }
