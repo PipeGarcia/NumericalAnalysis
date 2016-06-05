@@ -70,7 +70,8 @@
         <activity android:name=".LinearSplineResult" />
         <activity android:name=".NumericalIntegration" />
         <activity android:name=".NumericalIntegrationParameters" />
-        <activity android:name=".NumericalIntegrationMethods"></activity>
+        <activity android:name=".NumericalIntegrationMethods" />
+        <activity android:name=".TrapezeResult"></activity>
     </application>
 
 </manifest>
